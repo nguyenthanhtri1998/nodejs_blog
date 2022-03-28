@@ -1,0 +1,43 @@
+{
+    "name": "nodejs",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/main.js",
+    "scripts": {
+        "beautifull": "prettier --single-quote --trailing-comma all --write src/**/*.{js,json,scss}",
+        "start": "nodemon --inspect src/main.js",
+        "watch": "node-sass --watch src/resources/scss/app.scss src/public/css/app.css",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nguyenthanhtri1998/nodejs_blog.git"
+    },
+    "keywords": [
+        "blog",
+        "by",
+        "nodejs"
+    ],
+    "author": "NguyenThanhTri",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/nguyenthanhtri1998/nodejs_blog/issues"
+    },
+    "homepage": "https://github.com/nguyenthanhtri1998/nodejs_blog#readme",
+    "dependencies": {
+        "express": "^4.17.1",
+        "express-handlebars": "^5.3.3",
+        "method-override": "^3.0.0",
+        "mongoose": "^5.13.7",
+        "mongoose-delete": "^0.5.3",
+        "mongoose-slug-generator": "^1.0.4"
+    },
+    "devDependencies": {
+        "husky": "^7.0.1",
+        "lint-staged": "^11.1.2",
+        "morgan": "^1.10.0",
+        "node-sass": "^6.0.1",
+        "nodemon": "^2.0.12",
+        "prettier": "^2.3.2"
+    }
+}
